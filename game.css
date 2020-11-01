@@ -1,0 +1,110 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f7eb99;
+}
+
+.menu-screen {
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+
+    background-color: #378723;
+    color: #ffffff;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+
+.button:hover {
+    transform: scale(1.08);
+    background-color: #273f22;
+}
+
+#start-screen h1 {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+#start-screen h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: .1em;
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+#avatar-picker h2, #end-screen .container > h2 {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.avatar-choices {
+    margin-top: 25px;
+    display: flex;
+}
+
+.select-avatar {
+    font-size: 40px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+.select-avatar:hover {
+    background-color: #afeeee;
+}
+
+.select-avatar:not(:last-child) {
+    margin-right: 20px;
+}
+
+.game {
+    padding: 100px 10vw;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.game__scoreboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.game__container {
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+}
+
+#results {
+    text-align: center;
+}
